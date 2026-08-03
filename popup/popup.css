@@ -1,0 +1,60 @@
+:root {
+  --green: #188038;
+  --amber: #c77700;
+  --red: #c5221f;
+  --blue: #00539f;
+  --ink: #1c2430;
+  --bg: #ffffff;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  width: 300px;
+  margin: 0;
+  padding: 14px 16px 12px;
+  font: 13px/1.45 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+}
+
+.thl-head { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+.thl-logo {
+  width: 24px; height: 24px; border-radius: 6px;
+  background: linear-gradient(135deg, #188038 0%, #e8a400 55%, #c5221f 100%);
+  color: #fff; font-weight: 800; text-align: center; line-height: 24px;
+}
+.thl-head h1 { margin: 0; font-size: 14px; }
+
+.thl-switch {
+  display: flex; align-items: center; gap: 8px;
+  padding: 6px 0; cursor: pointer;
+}
+.thl-switch input { accent-color: var(--blue); }
+
+.thl-field {
+  border: 1px solid #dfe3e8; border-radius: 8px;
+  margin: 8px 0; padding: 8px 10px;
+}
+.thl-field legend { font-weight: 700; font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #5b6675; }
+.thl-radio { display: flex; align-items: center; gap: 8px; padding: 3px 0; cursor: pointer; }
+.thl-radio input { accent-color: var(--blue); }
+
+.thl-row { display: flex; flex-direction: column; gap: 4px; padding: 4px 0; }
+.thl-row label { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.thl-row input {
+  width: 70px; padding: 3px 6px; border: 1px solid #c6ccd4; border-radius: 5px;
+  font: inherit; text-align: right;
+}
+
+.thl-legend { display: flex; gap: 8px; margin-top: 10px; align-items: center; }
+.thl-swatch {
+  padding: 2px 8px; border-radius: 999px; color: #fff;
+  font-size: 10px; font-weight: 800; letter-spacing: 0.4px;
+}
+.thl-swatch-low { background: var(--green); }
+.thl-swatch-mid { background: var(--amber); }
+.thl-swatch-high { background: var(--red); }
+.thl-swatch-cc { background: var(--blue); }
+
+.thl-saved { margin: 6px 0 0; color: var(--green); font-weight: 700; text-align: center; }

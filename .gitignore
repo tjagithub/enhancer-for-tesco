@@ -1,0 +1,7 @@
+node_modules/
+research/chromium-profile/
+.playwright-cli/
+research/page.html
+research/live-shot.png
+research/tiles.txt
+*.zip

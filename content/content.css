@@ -1,0 +1,63 @@
+/* Tesco Price Highlight - styles */
+
+/* Overlay layer: absolutely positioned over a product tile, on top of the
+   page content but transparent to mouse/keyboard so the page keeps working. */
+.thl-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 50;
+  pointer-events: none;
+  overflow: visible;
+}
+
+/* Translucent "marker" wash over the price / unit-price element. No border. */
+.thl-wash {
+  position: absolute;
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.thl-wash.thl-low  { background-color: rgba(24, 128, 56, 0.18); }
+.thl-wash.thl-mid  { background-color: rgba(199, 119, 0, 0.18); }
+.thl-wash.thl-high { background-color: rgba(197, 34, 31, 0.16); }
+
+/* Verdict badges, layered next to (or on) the scored element. */
+.thl-badge {
+  position: absolute;
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 14px;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+  white-space: nowrap;
+  font-family: inherit;
+  pointer-events: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.thl-badge-low  { background-color: #188038; }
+.thl-badge-mid  { background-color: #c77700; }
+.thl-badge-high { background-color: #c5221f; }
+
+/* Price-tag style for the score verdict, hugging the main price text:
+   £3.60 [HIGH] — pointed on the left so it reads as attached to the price. */
+.thl-badge.thl-tag {
+  border-radius: 2px;
+  clip-path: polygon(6px 0, 100% 0, 100% 100%, 6px 100%, 0 50%);
+  padding: 1px 5px 1px 8px;
+  font-size: 9px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+  box-shadow: none;
+}
+
+/* Star-rating verdict icon */
+.thl-rating {
+  margin-left: 6px !important;
+  font-size: 13px !important;
+  line-height: 1 !important;
+  vertical-align: middle !important;
+}

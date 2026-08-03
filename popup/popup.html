@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Tesco Price Highlight</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="thl-head">
+    <span class="thl-logo">£</span>
+    <h1>Tesco Price Highlight</h1>
+  </header>
+
+  <label class="thl-switch">
+    <input type="checkbox" id="enabled" checked />
+    <span>Highlight prices on Tesco</span>
+  </label>
+
+  <fieldset class="thl-field">
+    <legend>Scoring</legend>
+    <label class="thl-radio">
+      <input type="radio" name="mode" value="bands" checked />
+      <span>Fixed bands (£/kg)</span>
+    </label>
+    <label class="thl-radio">
+      <input type="radio" name="mode" value="relative" />
+      <span>Compare to other products on the page</span>
+    </label>
+  </fieldset>
+
+  <fieldset class="thl-field" id="bands">
+    <legend>Bands</legend>
+    <div class="thl-row">
+      <label>Per kg · low under <input type="number" id="kgLow" step="0.1" min="0" /> £</label>
+      <label>high above <input type="number" id="kgMid" step="0.1" min="0" /> £</label>
+    </div>
+    <div class="thl-row">
+      <label>Per item · low under <input type="number" id="eachLow" step="0.05" min="0" /> £</label>
+      <label>high above <input type="number" id="eachMid" step="0.05" min="0" /> £</label>
+    </div>
+  </fieldset>
+
+  <label class="thl-switch">
+    <input type="checkbox" id="flagRegular" checked />
+    <span>Flag the regular price red when a Clubcard price exists</span>
+  </label>
+
+  <label class="thl-switch">
+    <input type="checkbox" id="ratingIcons" checked />
+    <span>Rating verdict icons next to stars (✅ ⚠️ ❌)</span>
+  </label>
+
+  <footer class="thl-legend">
+    <span class="thl-swatch thl-swatch-low">LOW</span>
+    <span class="thl-swatch thl-swatch-mid">MID</span>
+    <span class="thl-swatch thl-swatch-high">HIGH</span>
+    <span class="thl-swatch thl-swatch-cc">CC</span>
+  </footer>
+
+  <p class="thl-saved" id="saved" hidden>Saved ✓</p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
