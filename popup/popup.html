@@ -12,8 +12,9 @@
   </header>
 
   <label class="thl-switch">
-    <input type="checkbox" id="enabled" checked />
     <span>Highlight prices on Tesco</span>
+    <input type="checkbox" id="enabled" checked />
+    <span class="thl-toggle" aria-hidden="true"></span>
   </label>
 
   <fieldset class="thl-field">
@@ -30,24 +31,35 @@
 
   <fieldset class="thl-field" id="bands">
     <legend>Bands</legend>
-    <div class="thl-row">
-      <label>Per kg · low under <input type="number" id="kgLow" step="0.1" min="0" /> £</label>
-      <label>high above <input type="number" id="kgMid" step="0.1" min="0" /> £</label>
-    </div>
-    <div class="thl-row">
-      <label>Per item · low under <input type="number" id="eachLow" step="0.05" min="0" /> £</label>
-      <label>high above <input type="number" id="eachMid" step="0.05" min="0" /> £</label>
+    <div class="thl-bands">
+      <div class="thl-band-row thl-band-head">
+        <span></span>
+        <span class="thl-band-col">low under</span>
+        <span class="thl-band-col">high above</span>
+      </div>
+      <div class="thl-band-row">
+        <span class="thl-band-name">Per kg</span>
+        <span class="thl-input"><input id="kgLow" type="number" step="0.1" min="0" inputmode="decimal" /></span>
+        <span class="thl-input"><input id="kgMid" type="number" step="0.1" min="0" inputmode="decimal" /></span>
+      </div>
+      <div class="thl-band-row">
+        <span class="thl-band-name">Per item</span>
+        <span class="thl-input"><input id="eachLow" type="number" step="0.05" min="0" inputmode="decimal" /></span>
+        <span class="thl-input"><input id="eachMid" type="number" step="0.05" min="0" inputmode="decimal" /></span>
+      </div>
     </div>
   </fieldset>
 
   <label class="thl-switch">
+    <span>Flag Clubcard price</span>
     <input type="checkbox" id="flagRegular" checked />
-    <span>Flag the regular price red when a Clubcard price exists</span>
+    <span class="thl-toggle" aria-hidden="true"></span>
   </label>
 
   <label class="thl-switch">
+    <span>Verdict icons</span>
     <input type="checkbox" id="ratingIcons" checked />
-    <span>Rating verdict icons next to stars (✅ ⚠️ ❌)</span>
+    <span class="thl-toggle" aria-hidden="true"></span>
   </label>
 
   <footer class="thl-legend">
