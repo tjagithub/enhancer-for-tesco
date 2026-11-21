@@ -1,0 +1,2536 @@
+[
+	{
+		"data": {
+			"category": {
+				"pageInformation": {
+					"totalCount": 257,
+					"pageNo": 1,
+					"pageId": null,
+					"count": 24,
+					"pageSize": 24,
+					"matchType": null,
+					"offset": 0,
+					"query": {
+						"searchTerm": null,
+						"actualTerm": null,
+						"queryPhase": "primary",
+						"__typename": "QueryType"
+					},
+					"__typename": "ListInfoType"
+				},
+				"results": [
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "299475285",
+							"tpnb": "84540102",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/1f6e976f-b7d5-44cd-8447-179769754609/2615b3c5-6730-4e52-91c2-218e583a8116.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "299475285",
+							"gtin": "05057545651520",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Ms Molly's Strawberry Swirl Cheesecake 375G",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/1f6e976f-b7d5-44cd-8447-179769754609/2615b3c5-6730-4e52-91c2-218e583a8116.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Desserts",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Cheesecake",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 16,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 0.85,
+								"unitPrice": 2.27,
+								"unitOfMeasure": "kg",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "Ms Molly's",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 71,
+									"overallRating": 4.1,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "299475302",
+							"tpnb": "84540119",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/38c6ab26-4a1d-45f2-889e-5fc59a104778/a0898f15-0976-4feb-b824-e07453413f28.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "299475302",
+							"gtin": "05057545651544",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Ms Molly's Lemon Swirl Cheesecake 375G",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/38c6ab26-4a1d-45f2-889e-5fc59a104778/a0898f15-0976-4feb-b824-e07453413f28.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Desserts",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Cheesecake",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 16,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 0.85,
+								"unitPrice": 2.27,
+								"unitOfMeasure": "kg",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "Ms Molly's",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 81,
+									"overallRating": 4.3,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "321847141",
+							"tpnb": "96768932",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/dc515829-c757-4256-8aca-533b0a2e3585/81c8edb3-ca0f-4883-af5c-cf709ba246b1.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "321847141",
+							"gtin": "05059697773020",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": true,
+							"fulfilment": null,
+							"promotions": [
+								{
+									"id": "103606029",
+									"attributes": [
+										"CLUBCARD_PRICING"
+									],
+									"promotionType": null,
+									"__typename": "PromotionType",
+									"startDate": "2026-10-26T00:00:00Z",
+									"endDate": "2027-01-11T00:00:00Z",
+									"description": "£1.00 Save 1/3 Clubcard Price",
+									"unitSellingInfo": "£7.14/kg",
+									"price": {
+										"beforeDiscount": null,
+										"afterDiscount": 1.5,
+										"__typename": "PromotionPriceType"
+									},
+									"missed": null,
+									"warnings": null
+								}
+							],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Tesco Penguin Ice Cream Lollies 140g",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/dc515829-c757-4256-8aca-533b0a2e3585/81c8edb3-ca0f-4883-af5c-cf709ba246b1.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Desserts",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Ice Cream Desserts",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 25,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [
+								{
+									"isViolated": false,
+									"type": "RdgDateRange",
+									"__typename": "ProductRestrictionType",
+									"message": "This product is available for delivery or collection until 31/12/2026"
+								}
+							],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.5,
+								"unitPrice": 10.71,
+								"unitOfMeasure": "kg",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "TESCO",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 4,
+									"overallRating": 5,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "302872830",
+							"tpnb": "86278283",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/c511432c-4bb0-4056-97b6-fb21e5888bf1/6b224381-e739-400f-b72d-655a37421c33.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "302872830",
+							"gtin": "05057967137251",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Ms. Molly's Assorted Fruit Lollies 8X35ml",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/c511432c-4bb0-4056-97b6-fb21e5888bf1/6b224381-e739-400f-b72d-655a37421c33.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Under 100 Calories",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 16,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.15,
+								"unitPrice": 4.11,
+								"unitOfMeasure": "litre",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "Ms Molly's",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 69,
+									"overallRating": 4.3,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "302872853",
+							"tpnb": "86278292",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/5f87ef2f-a017-4b5c-841d-8cfd44772e57/c4b5c5bc-6cdd-4932-8d5d-6e93d9a6dc1a.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "302872853",
+							"gtin": "05057967137275",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Ms. Molly's Milk Lollies 8X35ml",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/5f87ef2f-a017-4b5c-841d-8cfd44772e57/c4b5c5bc-6cdd-4932-8d5d-6e93d9a6dc1a.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Under 100 Calories",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 16,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.15,
+								"unitPrice": 4.11,
+								"unitOfMeasure": "litre",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "Ms Molly's",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 81,
+									"overallRating": 4.1,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "320552635",
+							"tpnb": "93947800",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/0c63af1b-b435-44ce-9c29-62b99f5bd152/20895838-b27a-4470-becd-2b8876d73340_1736960086.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "320552635",
+							"gtin": "05059697722721",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": " Tesco Chocolate Flavour Dessert Sauce 325g",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/0c63af1b-b435-44ce-9c29-62b99f5bd152/20895838-b27a-4470-becd-2b8876d73340_1736960086.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Ice Cream Sauce, Wafers & Cornets",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 99,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.2,
+								"unitPrice": 3.69,
+								"unitOfMeasure": "kg",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "TESCO",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 27,
+									"overallRating": 4.4,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "320670840",
+							"tpnb": "93938788",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/c2ea8078-a985-4954-91a5-e2bcd1c10b64/e35482de-d98f-4eaa-ba07-54ef14131e0d_1896112509.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "320670840",
+							"gtin": "05063250550966",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Tesco Caramel Dessert Sauce 325g",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/c2ea8078-a985-4954-91a5-e2bcd1c10b64/e35482de-d98f-4eaa-ba07-54ef14131e0d_1896112509.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Ice Cream Sauce, Wafers & Cornets",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 99,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.2,
+								"unitPrice": 3.69,
+								"unitOfMeasure": "kg DR.WT",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "TESCO",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 25,
+									"overallRating": 4,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "281510807",
+							"tpnb": "71645730",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/982516b7-1c13-492d-9292-fa3d73f48f6f/38882762-c7be-4d76-9f92-d53d988a7fd0.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "281510807",
+							"gtin": "05053526592561",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Tesco Fruity Helter Skelters (5 X 70Ml) 350Ml",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/982516b7-1c13-492d-9292-fa3d73f48f6f/38882762-c7be-4d76-9f92-d53d988a7fd0.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Under 100 Calories",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 16,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.29,
+								"unitPrice": 3.69,
+								"unitOfMeasure": "litre",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "TESCO",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 61,
+									"overallRating": 3,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "291632204",
+							"tpnb": "80691672",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/f18af995-e626-458e-ba73-53d4071f2fe0/7d4601ae-8753-493f-bd5e-e760ddb20ad3.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "291632204",
+							"gtin": "05054775424016",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Tesco Rocket Lollies 8 Pack 464Ml",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/f18af995-e626-458e-ba73-53d4071f2fe0/7d4601ae-8753-493f-bd5e-e760ddb20ad3.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Under 100 Calories",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									},
+									{
+										"__typename": "CompetitorsInfo",
+										"competitors": [
+											{
+												"id": "ALDI",
+												"priceMatch": {
+													"isMatching": true,
+													"__typename": "PriceMatch"
+												},
+												"__typename": "Competitor"
+											}
+										]
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 16,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.35,
+								"unitPrice": 2.91,
+								"unitOfMeasure": "litre",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "TESCO",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 93,
+									"overallRating": 4.2,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "299252566",
+							"tpnb": "84435642",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/04ce5fdd-e647-405d-8b57-1152b32e9ec4/036a3644-b336-4e60-83a6-ee805619ce8e.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "299252566",
+							"gtin": "05057545473788",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Ms Molly's Vanilla Ice Cream 2Ltr",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/04ce5fdd-e647-405d-8b57-1152b32e9ec4/036a3644-b336-4e60-83a6-ee805619ce8e.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Ice Cream Tubs",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 16,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.35,
+								"unitPrice": 0.68,
+								"unitOfMeasure": "litre",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "Ms Molly's",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 98,
+									"overallRating": 3.7,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "283645915",
+							"tpnb": "76656450",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/3613d497-0122-46ec-9e76-3f569fca7cca/6b544f18-7455-4b20-8695-92ecd87bb555_1663790152.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "283645915",
+							"gtin": "05054268284035",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Tesco 10 Waffle Cones",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/3613d497-0122-46ec-9e76-3f569fca7cca/6b544f18-7455-4b20-8695-92ecd87bb555_1663790152.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Ice Cream Sauce, Wafers & Cornets",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 25,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.45,
+								"unitPrice": 0.14,
+								"unitOfMeasure": "each",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "TESCO",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 67,
+									"overallRating": 4,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "272357524",
+							"tpnb": "71158834",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/87328549-4237-4f47-aa9f-694c47f9e212/2e93b33f-fe9b-4628-88f3-4d82bd6aecda.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "272357524",
+							"gtin": "05052909332794",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Tesco Real Fruit Splits 6 X 73Ml",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/87328549-4237-4f47-aa9f-694c47f9e212/2e93b33f-fe9b-4628-88f3-4d82bd6aecda.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Under 100 Calories",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 16,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.5,
+								"unitPrice": 3.42,
+								"unitOfMeasure": "litre",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "TESCO",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 112,
+									"overallRating": 3.5,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "323006535",
+							"tpnb": "97499684",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/449f5bee-9c89-4cae-bee8-c814fc5f9845/dcada190-b575-4f1c-bacc-d52a038f6d56.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "323006535",
+							"gtin": "05063445786910",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Tesco Strawberry & Lime Helter Skelter Ice Lollies 5x70ml",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/449f5bee-9c89-4cae-bee8-c814fc5f9845/dcada190-b575-4f1c-bacc-d52a038f6d56.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Ice Lollies",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 25,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.5,
+								"unitPrice": 4.29,
+								"unitOfMeasure": "litre",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "TESCO",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 13,
+									"overallRating": 2.1,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "310098029",
+							"tpnb": "89990315",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/403ea191-de73-4151-8915-aa2ac38ae3d3/38c9ad07-a51d-4a45-a4a6-0dcda608d07e.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "310098029",
+							"gtin": "08711327589209",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": true,
+							"fulfilment": null,
+							"promotions": [
+								{
+									"id": "104446222",
+									"attributes": [
+										"CLUBCARD_PRICING"
+									],
+									"promotionType": null,
+									"__typename": "PromotionType",
+									"startDate": "2026-11-10T00:00:00Z",
+									"endDate": "2027-01-12T00:00:00Z",
+									"description": "£1.50 Save 25% Clubcard Price",
+									"unitSellingInfo": "£2.31/litre",
+									"price": {
+										"beforeDiscount": null,
+										"afterDiscount": 2,
+										"__typename": "PromotionPriceType"
+									},
+									"missed": null,
+									"warnings": null
+								}
+							],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Viennetta Chocolate Yule Log Ice Cream 650ml",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/403ea191-de73-4151-8915-aa2ac38ae3d3/38c9ad07-a51d-4a45-a4a6-0dcda608d07e.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Ice Cream Tubs",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 25,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 2,
+								"unitPrice": 3.08,
+								"unitOfMeasure": "litre",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "VIENNETTA",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 38,
+									"overallRating": 4.3,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "323318874",
+							"tpnb": "97501262",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/a356acb0-da0f-4725-b8b0-7b7f386a8f64/1e21d6ae-47bf-431f-9f24-d00db9b1e3aa.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "323318874",
+							"gtin": "05063250531583",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Tesco Ice Pop Ice Lollies 6x73ml",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/a356acb0-da0f-4725-b8b0-7b7f386a8f64/1e21d6ae-47bf-431f-9f24-d00db9b1e3aa.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Ice Lollies",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 25,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.65,
+								"unitPrice": 3.77,
+								"unitOfMeasure": "litre",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "TESCO",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 46,
+									"overallRating": 2.5,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "316068281",
+							"tpnb": "92753260",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/e006ff62-79e0-4cab-8607-a474b5424ad9/5dd01acb-f9aa-4931-9034-c3593f00f334.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "316068281",
+							"gtin": "05059697768439",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Tesco Soft Scoop Vanilla Ice Cream 2L",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/e006ff62-79e0-4cab-8607-a474b5424ad9/5dd01acb-f9aa-4931-9034-c3593f00f334.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Ice Cream Tubs",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									},
+									{
+										"__typename": "CompetitorsInfo",
+										"competitors": [
+											{
+												"id": "ALDI",
+												"priceMatch": {
+													"isMatching": true,
+													"__typename": "PriceMatch"
+												},
+												"__typename": "Competitor"
+											}
+										]
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 25,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.69,
+								"unitPrice": 0.84,
+								"unitOfMeasure": "litre",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "TESCO",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 73,
+									"overallRating": 3.7,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "254755092",
+							"tpnb": "50392979",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/a43b954b-144c-40f1-ae29-0bb17d4d109f/500baa2a-f3fa-4551-b353-9d304b91305b.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "254755092",
+							"gtin": "05000119145246",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Tesco Soft Scoop Raspberry Ripple 2 Litres",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/a43b954b-144c-40f1-ae29-0bb17d4d109f/500baa2a-f3fa-4551-b353-9d304b91305b.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Ice Cream Tubs",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 16,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.69,
+								"unitPrice": 0.84,
+								"unitOfMeasure": "litre",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "TESCO",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 76,
+									"overallRating": 3.9,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "254755063",
+							"tpnb": "50392956",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/38cb0aea-acfb-493c-a831-390615d2dc70/468d90de-fbac-4c20-a650-70c001c109ea.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "254755063",
+							"gtin": "05000119145239",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Tesco Soft Scoop Neapolitan 2 Litres",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/38cb0aea-acfb-493c-a831-390615d2dc70/468d90de-fbac-4c20-a650-70c001c109ea.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Ice Cream Tubs",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 25,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.69,
+								"unitPrice": 0.84,
+								"unitOfMeasure": "litre",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "TESCO",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 83,
+									"overallRating": 3.4,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "305830835",
+							"tpnb": "87693843",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/6ef15ba5-8923-417e-9434-c2309f32014f/842ef225-9dd5-4cec-9ba0-c10c65b95d89.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "305830835",
+							"gtin": "05057753936556",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Tesco Salted Caramel Cones 4X110ml",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/6ef15ba5-8923-417e-9434-c2309f32014f/842ef225-9dd5-4cec-9ba0-c10c65b95d89.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Ice Cream Cones",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 25,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.7,
+								"unitPrice": 3.86,
+								"unitOfMeasure": "litre",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "TESCO",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 98,
+									"overallRating": 4.6,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "276782843",
+							"tpnb": "70520954",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/d5634bfe-5c1b-47cb-8a2c-0ed3094f09fb/06b68d3d-34ec-488e-8daf-709e880f53d3.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "276782843",
+							"gtin": "05052910707499",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Tesco Strawberry & Vanilla Cones 4 X 110Ml",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/d5634bfe-5c1b-47cb-8a2c-0ed3094f09fb/06b68d3d-34ec-488e-8daf-709e880f53d3.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Ice Cream Cones",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 16,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.7,
+								"unitPrice": 3.86,
+								"unitOfMeasure": "litre",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "TESCO",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 90,
+									"overallRating": 4,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "276781907",
+							"tpnb": "70521187",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/9d4e264a-351e-4448-a160-6e15f9376da3/02571c87-8430-43b2-9a30-c3c0499cce12.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "276781907",
+							"gtin": "05052910707482",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Tesco Toffee & Vanilla Cones 4 X 110Ml",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/9d4e264a-351e-4448-a160-6e15f9376da3/02571c87-8430-43b2-9a30-c3c0499cce12.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Ice Cream Cones",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 16,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.7,
+								"unitPrice": 3.86,
+								"unitOfMeasure": "litre",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "TESCO",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 111,
+									"overallRating": 4.5,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "281947446",
+							"tpnb": "75811487",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/f9e76146-e38b-4d3c-b863-be29b1e350e3/e6611035-075f-417d-a63e-d00b7b5fdb03.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "281947446",
+							"gtin": "05053526753542",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Tesco Chocolate & Nut Cones 4 X 110Ml",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/f9e76146-e38b-4d3c-b863-be29b1e350e3/e6611035-075f-417d-a63e-d00b7b5fdb03.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Ice Cream Cones",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 16,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.7,
+								"unitPrice": 3.86,
+								"unitOfMeasure": "litre",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "TESCO",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 78,
+									"overallRating": 4.5,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "276781533",
+							"tpnb": "70521066",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/f4fa1a49-d68a-45d7-99bb-623e75f6d0e3/d1cfd871-aa55-4b6e-9f6a-83be0dfad3f0.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "276781533",
+							"gtin": "05052910707437",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Tesco Mint & Chocolate Cones 4 X 110Ml",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/f4fa1a49-d68a-45d7-99bb-623e75f6d0e3/d1cfd871-aa55-4b6e-9f6a-83be0dfad3f0.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Ice Cream Cones",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 16,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.7,
+								"unitPrice": 3.86,
+								"unitOfMeasure": "litre",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "TESCO",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 91,
+									"overallRating": 4.4,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					},
+					{
+						"node": {
+							"__typename": "ProductType",
+							"id": "323927625",
+							"tpnb": "97865308",
+							"adId": null,
+							"isForSale": true,
+							"defaultImageUrl": "https://digitalcontent.api.tesco.com/v2/media/ghs/c7cbccbf-eaac-41cf-9a58-d74c35a54193/3c0a9618-0a00-4ac6-94e9-9d098fdc927b_472489882.jpeg?h=225&w=225",
+							"bulkBuyLimitGroupId": null,
+							"tpnc": "323927625",
+							"gtin": "05010067318197",
+							"modelMetadata": null,
+							"seller": null,
+							"isNew": false,
+							"fulfilment": null,
+							"promotions": [],
+							"isInFavourites": null,
+							"isInAnyList": null,
+							"title": "Askeys Classic Ice Cream Crispy 21 Cones",
+							"media": {
+								"defaultImage": {
+									"url": "https://digitalcontent.api.tesco.com/v2/media/ghs/c7cbccbf-eaac-41cf-9a58-d74c35a54193/3c0a9618-0a00-4ac6-94e9-9d098fdc927b_472489882.jpeg",
+									"aspectRatio": 1,
+									"__typename": "ProductMediaDefaultImageType"
+								},
+								"__typename": "ProductMediaType"
+							},
+							"aisleName": "Ice Cream & Lollies",
+							"departmentName": "Frozen Food",
+							"superDepartmentName": "Groceries & Essentials",
+							"shelfName": "Ice Cream Cones",
+							"details": {
+								"components": [
+									{
+										"isLowEverydayPricing": false,
+										"__typename": "AdditionalInfo"
+									}
+								],
+								"__typename": "ProductDetailsType"
+							},
+							"bulkBuyLimit": 99,
+							"groupBulkBuyLimit": 0,
+							"averageWeight": 0,
+							"productType": "SingleProduct",
+							"catchWeightList": null,
+							"restrictions": [],
+							"variations": null,
+							"status": "AvailableForSale",
+							"price": {
+								"actual": 1.7,
+								"unitPrice": 0.08,
+								"unitOfMeasure": "each",
+								"__typename": "PriceType"
+							},
+							"unavailabilityReasons": null,
+							"substitutions": [],
+							"brandName": "ASKEYS",
+							"reviews": {
+								"stats": {
+									"noOfReviews": 6,
+									"overallRating": 1,
+									"overallRatingRange": 5,
+									"__typename": "ReviewStatsType"
+								},
+								"__typename": "ReviewsType"
+							}
+						},
+						"__typename": "CompositeResultType"
+					}
+				],
+				"facetLists": null,
+				"facets": [
+					{
+						"__typename": "FacetBooleanType",
+						"id": "new",
+						"name": "New",
+						"type": "boolean",
+						"booleanValues": {
+							"count": 19,
+							"isSelected": null,
+							"value": "true",
+							"name": null,
+							"__typename": "DynamicFilterValues"
+						}
+					},
+					{
+						"__typename": "FacetBooleanType",
+						"id": "offer",
+						"name": "Special Offers",
+						"type": "boolean",
+						"booleanValues": {
+							"count": 84,
+							"isSelected": null,
+							"value": "true",
+							"name": null,
+							"__typename": "DynamicFilterValues"
+						}
+					},
+					{
+						"__typename": "FacetRangeType",
+						"id": "price",
+						"name": "Price",
+						"type": "range"
+					},
+					{
+						"__typename": "FacetMultiLevelType",
+						"id": "category",
+						"name": "Categories",
+						"type": "multiLevel",
+						"multiLevelValues": {
+							"children": [
+								{
+									"count": 73,
+									"name": "Ice Cream Sticks & Bars",
+									"value": "Ice Cream Sticks & Bars",
+									"isSelected": null,
+									"__typename": "DynamicFilterValues"
+								},
+								{
+									"count": 62,
+									"name": "Ice Cream Tubs",
+									"value": "Ice Cream Tubs",
+									"isSelected": null,
+									"__typename": "DynamicFilterValues"
+								},
+								{
+									"count": 47,
+									"name": "Luxury Ice Cream Tubs",
+									"value": "Luxury Ice Cream Tubs",
+									"isSelected": null,
+									"__typename": "DynamicFilterValues"
+								},
+								{
+									"count": 40,
+									"name": "Ice Lollies",
+									"value": "Ice Lollies",
+									"isSelected": null,
+									"__typename": "DynamicFilterValues"
+								},
+								{
+									"count": 30,
+									"name": "Ice Cream Cones",
+									"value": "Ice Cream Cones",
+									"isSelected": null,
+									"__typename": "DynamicFilterValues"
+								},
+								{
+									"count": 25,
+									"name": "Confectionery",
+									"value": "Confectionery",
+									"isSelected": null,
+									"__typename": "DynamicFilterValues"
+								},
+								{
+									"count": 24,
+									"name": "Ice Cream Snacking & Mochi ",
+									"value": "Ice Cream Snacking & Mochi ",
+									"isSelected": null,
+									"__typename": "DynamicFilterValues"
+								},
+								{
+									"count": 23,
+									"name": "Mini Ice Cream Sticks & Pots",
+									"value": "Mini Ice Cream Sticks & Pots",
+									"isSelected": null,
+									"__typename": "DynamicFilterValues"
+								},
+								{
+									"count": 21,
+									"name": "Under 100 Calories",
+									"value": "Under 100 Calories",
+									"isSelected": null,
+									"__typename": "DynamicFilterValues"
+								},
+								{
+									"count": 13,
+									"name": "Ice Cream Sauce, Wafers & Cornets",
+									"value": "Ice Cream Sauce, Wafers & Cornets",
+									"isSelected": null,
+									"__typename": "DynamicFilterValues"
+								},
+								{
+									"count": 11,
+									"name": "£1.65 or Under",
+									"value": "£1.65 or Under",
+									"isSelected": null,
+									"__typename": "DynamicFilterValues"
+								},
+								{
+									"count": 8,
+									"name": "Vegan Ice Cream",
+									"value": "Vegan Ice Cream",
+									"isSelected": null,
+									"__typename": "DynamicFilterValues"
+								},
+								{
+									"count": 5,
+									"name": "Sorbet",
+									"value": "Sorbet",
+									"isSelected": null,
+									"__typename": "DynamicFilterValues"
+								},
+								{
+									"count": 5,
+									"name": "Under 150 calories per 100ml serving",
+									"value": "Under 150 calories per 100ml serving",
+									"isSelected": null,
+									"__typename": "DynamicFilterValues"
+								},
+								{
+									"count": 4,
+									"name": "Gluten Free Ice Cream",
+									"value": "Gluten Free Ice Cream",
+									"isSelected": null,
+									"__typename": "DynamicFilterValues"
+								}
+							],
+							"appliedValues": null,
+							"__typename": "MultilevelFacetValues"
+						},
+						"multiplicity": null,
+						"metadata": null
+					},
+					{
+						"__typename": "FacetListType",
+						"id": "brands",
+						"name": "Brand",
+						"type": "list",
+						"listValues": [
+							{
+								"name": "TESCO",
+								"value": "TESCO",
+								"isSelected": null,
+								"count": 38,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "MAGNUM",
+								"value": "MAGNUM",
+								"isSelected": null,
+								"count": 27,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "BEN & JERRY'S",
+								"value": "BEN & JERRY'S",
+								"isSelected": null,
+								"count": 21,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "TESCO finest",
+								"value": "TESCO finest",
+								"isSelected": null,
+								"count": 15,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Cadbury",
+								"value": "Cadbury",
+								"isSelected": null,
+								"count": 14,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Häagen-Dazs",
+								"value": "Häagen-Dazs",
+								"isSelected": null,
+								"count": 14,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "CORNETTO",
+								"value": "CORNETTO",
+								"isSelected": null,
+								"count": 9,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "SOLERO",
+								"value": "SOLERO",
+								"isSelected": null,
+								"count": 8,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "LITTLE MOONS",
+								"value": "LITTLE MOONS",
+								"isSelected": null,
+								"count": 7,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "OREO",
+								"value": "OREO",
+								"isSelected": null,
+								"count": 7,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "HALO TOP",
+								"value": "HALO TOP",
+								"isSelected": null,
+								"count": 6,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "NUII",
+								"value": "NUII",
+								"isSelected": null,
+								"count": 6,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "ASKEYS",
+								"value": "ASKEYS",
+								"isSelected": null,
+								"count": 5,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "CARTE D'OR",
+								"value": "CARTE D'OR",
+								"isSelected": null,
+								"count": 5,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Ms Molly's",
+								"value": "Ms Molly's",
+								"isSelected": null,
+								"count": 5,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "ROWNTREES",
+								"value": "ROWNTREES",
+								"isSelected": null,
+								"count": 5,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Rowntree's",
+								"value": "Rowntree's",
+								"isSelected": null,
+								"count": 5,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "TWISTER",
+								"value": "TWISTER",
+								"isSelected": null,
+								"count": 5,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "trüfrü",
+								"value": "trüfrü",
+								"isSelected": null,
+								"count": 5,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "CADBURY",
+								"value": "CADBURY",
+								"isSelected": null,
+								"count": 4,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Lotus",
+								"value": "Lotus",
+								"isSelected": null,
+								"count": 4,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Nestle",
+								"value": "Nestle",
+								"isSelected": null,
+								"count": 4,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "WALL'S",
+								"value": "WALL'S",
+								"isSelected": null,
+								"count": 4,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "FRUiT RiOT!",
+								"value": "FRUiT RiOT!",
+								"isSelected": null,
+								"count": 3,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "KELLY'S",
+								"value": "KELLY'S",
+								"isSelected": null,
+								"count": 3,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Kinder",
+								"value": "Kinder",
+								"isSelected": null,
+								"count": 3,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "MACKIES",
+								"value": "MACKIES",
+								"isSelected": null,
+								"count": 3,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "REMEO",
+								"value": "REMEO",
+								"isSelected": null,
+								"count": 3,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "WALLS",
+								"value": "WALLS",
+								"isSelected": null,
+								"count": 3,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "CALIPPO",
+								"value": "CALIPPO",
+								"isSelected": null,
+								"count": 2,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "SNICKERS",
+								"value": "SNICKERS",
+								"isSelected": null,
+								"count": 2,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Algida",
+								"value": "Algida",
+								"isSelected": null,
+								"count": 1,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "BIRDS",
+								"value": "BIRDS",
+								"isSelected": null,
+								"count": 1,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "BOUNTY",
+								"value": "BOUNTY",
+								"isSelected": null,
+								"count": 1,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "CADBURYS",
+								"value": "CADBURYS",
+								"isSelected": null,
+								"count": 1,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Daim",
+								"value": "Daim",
+								"isSelected": null,
+								"count": 1,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Mars",
+								"value": "Mars",
+								"isSelected": null,
+								"count": 1,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "NUTELLA",
+								"value": "NUTELLA",
+								"isSelected": null,
+								"count": 1,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "R WHITES",
+								"value": "R WHITES",
+								"isSelected": null,
+								"count": 1,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Reese's",
+								"value": "Reese's",
+								"isSelected": null,
+								"count": 1,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "SWEDISH GLACE",
+								"value": "SWEDISH GLACE",
+								"isSelected": null,
+								"count": 1,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "TWIX",
+								"value": "TWIX",
+								"isSelected": null,
+								"count": 1,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "VIENNETTA",
+								"value": "VIENNETTA",
+								"isSelected": null,
+								"count": 1,
+								"__typename": "DynamicFilterValues"
+							}
+						],
+						"multiplicity": "multiple",
+						"metadata": null
+					},
+					{
+						"__typename": "FacetListType",
+						"id": "dietaries",
+						"name": "Lifestyle & Dietary",
+						"type": "list",
+						"listValues": [
+							{
+								"name": "No celery",
+								"value": "No celery",
+								"isSelected": null,
+								"count": 247,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "No crustacea",
+								"value": "No crustacea",
+								"isSelected": null,
+								"count": 247,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "No lupin",
+								"value": "No lupin",
+								"isSelected": null,
+								"count": 247,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "No mollusc",
+								"value": "No mollusc",
+								"isSelected": null,
+								"count": 247,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "No sesame",
+								"value": "No sesame",
+								"isSelected": null,
+								"count": 247,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "No fish",
+								"value": "No fish",
+								"isSelected": null,
+								"count": 245,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "No sulphites",
+								"value": "No sulphites",
+								"isSelected": null,
+								"count": 243,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "No mustard",
+								"value": "No mustard",
+								"isSelected": null,
+								"count": 236,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Low salt",
+								"value": "Low salt",
+								"isSelected": null,
+								"count": 217,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Vegetarian",
+								"value": "Vegetarian",
+								"isSelected": null,
+								"count": 177,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Halal",
+								"value": "Halal",
+								"isSelected": null,
+								"count": 174,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "No gluten",
+								"value": "No gluten",
+								"isSelected": null,
+								"count": 163,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "No egg",
+								"value": "No egg",
+								"isSelected": null,
+								"count": 154,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "No soya",
+								"value": "No soya",
+								"isSelected": null,
+								"count": 103,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "No artificial colours and flavours",
+								"value": "No artificial colours and flavours",
+								"isSelected": null,
+								"count": 67,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "No nuts and peanuts",
+								"value": "No nuts and peanuts",
+								"isSelected": null,
+								"count": 60,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Kosher",
+								"value": "Kosher",
+								"isSelected": null,
+								"count": 40,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "No artificial preservatives",
+								"value": "No artificial preservatives",
+								"isSelected": null,
+								"count": 37,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Low fat",
+								"value": "Low fat",
+								"isSelected": null,
+								"count": 35,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Vegan",
+								"value": "Vegan",
+								"isSelected": null,
+								"count": 35,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Low saturated fat",
+								"value": "Low saturated fat",
+								"isSelected": null,
+								"count": 34,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "No lactose",
+								"value": "No lactose",
+								"isSelected": null,
+								"count": 14,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "No milk",
+								"value": "No milk",
+								"isSelected": null,
+								"count": 14,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "No additives",
+								"value": "No additives",
+								"isSelected": null,
+								"count": 13,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Source of fibre",
+								"value": "Source of fibre",
+								"isSelected": null,
+								"count": 9,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Source of protein",
+								"value": "Source of protein",
+								"isSelected": null,
+								"count": 7,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "High fibre",
+								"value": "High fibre",
+								"isSelected": null,
+								"count": 1,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Low sugar",
+								"value": "Low sugar",
+								"isSelected": null,
+								"count": 1,
+								"__typename": "DynamicFilterValues"
+							}
+						],
+						"multiplicity": "multiple",
+						"metadata": {
+							"description": "Filters should not be used as an alternative to medical advice. Always check the label.",
+							"footerText": "In partnership with SpoonGuru.",
+							"linkText": "Find out more about each filter",
+							"linkUrl": "https://www.tesco.com/groceries/zone/general-terms-and-conditions#Dietary",
+							"__typename": "Metadata"
+						}
+					},
+					{
+						"__typename": "FacetListType",
+						"id": "itemType",
+						"name": "Item Type",
+						"type": "list",
+						"listValues": [
+							{
+								"name": "Ice Cream",
+								"value": "Ice Cream",
+								"isSelected": null,
+								"count": 106,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Ice Cream Novelties",
+								"value": "Ice Cream Novelties",
+								"isSelected": null,
+								"count": 89,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Ice Pops",
+								"value": "Ice Pops",
+								"isSelected": null,
+								"count": 23,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Ice Cream Syrup",
+								"value": "Ice Cream Syrup",
+								"isSelected": null,
+								"count": 10,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Ice Cream Cones",
+								"value": "Ice Cream Cones",
+								"isSelected": null,
+								"count": 7,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Gelato",
+								"value": "Gelato",
+								"isSelected": null,
+								"count": 6,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Chocolate Covered Fruit",
+								"value": "Chocolate Covered Fruit",
+								"isSelected": null,
+								"count": 5,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Cakes",
+								"value": "Cakes",
+								"isSelected": null,
+								"count": 3,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Candy",
+								"value": "Candy",
+								"isSelected": null,
+								"count": 3,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Sorbet",
+								"value": "Sorbet",
+								"isSelected": null,
+								"count": 3,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Chocolate",
+								"value": "Chocolate",
+								"isSelected": null,
+								"count": 1,
+								"__typename": "DynamicFilterValues"
+							},
+							{
+								"name": "Fruit Toppings",
+								"value": "Fruit Toppings",
+								"isSelected": null,
+								"count": 1,
+								"__typename": "DynamicFilterValues"
+							}
+						],
+						"multiplicity": "multiple",
+						"metadata": null
+					}
+				],
+				"options": {
+					"sortBy": [
+						"relevance",
+						"price-ascending",
+						"price-descending"
+					],
+					"__typename": "ListOptionsType"
+				},
+				"__typename": "ProductListType"
+			}
+		},
+		"status": 200
+	}
+]

@@ -9,6 +9,8 @@
     bands: { kg: { low: 2.5, mid: 6.0 }, each: { low: 1.0, mid: 3.0 } },
     flagRegularOnClubcard: true,
     ratingIcons: true,
+    restyleTiles: true,
+    declutter: true,
   };
 
   const $ = (id) => document.getElementById(id);
@@ -23,6 +25,8 @@
       },
       flagRegularOnClubcard: $('flagRegular').checked,
       ratingIcons: $('ratingIcons').checked,
+      restyleTiles: $('restyleTiles').checked,
+      declutter: $('declutter').checked,
     };
   }
 
@@ -40,6 +44,8 @@
     $('eachMid').value = s.bands.each.mid;
     $('flagRegular').checked = s.flagRegularOnClubcard;
     $('ratingIcons').checked = s.ratingIcons;
+    $('restyleTiles').checked = s.restyleTiles;
+    $('declutter').checked = s.declutter;
     $('bands').style.display = s.mode === 'bands' ? 'block' : 'none';
   }
 
@@ -64,7 +70,7 @@
       showSaved();
     };
 
-    for (const id of ['enabled', 'flagRegular', 'ratingIcons']) {
+    for (const id of ['enabled', 'flagRegular', 'ratingIcons', 'restyleTiles', 'declutter']) {
       $(id).addEventListener('change', save);
     }
     document.querySelectorAll('input[name="mode"]').forEach((r) =>

@@ -12,8 +12,10 @@
   "content_scripts": [
     {
       "matches": ["https://www.tesco.com/*"],
-      "js": ["content/parse.js", "content/content.js"],
-      "css": ["content/content.css"],
+      "js": ["content/parse.js", "content/departments.js", "content/filters.js",
+        "content/pages.js", "content/content.js"],
+      "css": ["content/content.css", "content/tiles.css", "content/declutter.css", "content/filters.css",
+        "content/pages.css"],
       "run_at": "document_idle"
     }
   ],

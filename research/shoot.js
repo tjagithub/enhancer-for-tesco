@@ -8,6 +8,8 @@ const OUT = process.argv[3] || '/tmp/thl-shot.png';
 (async () => {
   const context = await chromium.launchPersistentContext('/tmp/thl-shot-profile', {
     executablePath: CHROME, headless: false,
+    viewport: { width: 1500, height: 1100 },
+    userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36',
     ignoreDefaultArgs: ['--disable-extensions'],
     args: ['--load-extension=' + EXT],
   });

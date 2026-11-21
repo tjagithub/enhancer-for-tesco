@@ -4,10 +4,12 @@ const { JSDOM } = require('jsdom');
 
 const PARSE_SRC = fs.readFileSync(path.join(__dirname, '..', 'content', 'parse.js'), 'utf8');
 const CONTENT_SRC = fs.readFileSync(path.join(__dirname, '..', 'content', 'content.js'), 'utf8');
+const FILTERS_SRC = fs.readFileSync(path.join(__dirname, '..', 'content', 'filters.js'), 'utf8');
+const DEPTS_SRC = fs.readFileSync(path.join(__dirname, '..', 'content', 'departments.js'), 'utf8');
+const PAGES_SRC = fs.readFileSync(path.join(__dirname, '..', 'content', 'pages.js'), 'utf8');
 
 const FIXTURES = [
-  { name: 'browse', file: '/tmp/grid_browse.html' },
-  { name: 'search', file: '/tmp/grid_search.html' },
+  { name: 'ice-cream', file: path.join(__dirname, 'fixtures', 'ice-cream.html') },
 ];
 
 let failures = 0;
@@ -40,15 +42,44 @@ function run(content, dom) {
 }
 
 async function runFixture(fixture) {
-  const grid = fs.readFileSync(fixture.file, 'utf8');
+  // Saved pages carry Tesco's own scripts; strip them before JSDOM runs anything.
+  const grid = fs.readFileSync(fixture.file, 'utf8').replace(/<script\b[\s\S]*?<\/script>/gi, '');
   const dom = makeDom(grid);
   installChromeShim(dom, undefined);
   run(PARSE_SRC, dom);
+  run(DEPTS_SRC, dom);
+  run(FILTERS_SRC, dom);
+  run(PAGES_SRC, dom);
   run(CONTENT_SRC, dom);
   await new Promise((r) => setTimeout(r, 100));
   const doc = dom.window.document;
 
   console.log(`\n== ${fixture.name} ==`);
+
+  // Filter bar: built from Tesco's hidden panel; its controls click Tesco's own inputs.
+  const fbar = doc.querySelector('.thl-filters');
+  assert(fbar, 'filter bar rendered');
+  const dds = [...doc.querySelectorAll('.thl-filters .thl-dd')].map((d) => d.dataset.title);
+  assert(dds[0] === 'Sort' && dds.length === 5, `sort + 4 group dropdowns (${dds.join(', ')})`);
+  const chips = [...doc.querySelectorAll('.thl-filters .thl-fchip')].map((c) => c.firstChild.textContent);
+  assert(chips.join() === 'New,Special Offers', `toggle chips (${chips.join()})`);
+  const panelNew = [...doc.querySelectorAll('[aria-label="side panel filter"] input[type=checkbox]')][0];
+  let proxied = 0;
+  panelNew.addEventListener('click', () => proxied++);
+  doc.querySelector('.thl-filters .thl-fchip').click();
+  assert(proxied === 1, 'chip clicks Tesco\'s own checkbox');
+
+  // Department sidebar: built from the bundled tree, opened down to the page's aisle (canonical link).
+  const side = doc.querySelectorAll('.thl-sidebar');
+  assert(side.length === 1, 'one department sidebar');
+  const supers = doc.querySelectorAll('.thl-sidebar > details.thl-sb-super').length;
+  assert(supers === 4, `sidebar lists grocery departments only (${supers})`);
+  const cur = doc.querySelector('.thl-sb-current');
+  assert(cur && cur.textContent === 'Ice Cream & Lollies' && cur.getAttribute('href') === '/shop/en-GB/browse/groceries-and-essentials/frozen-food/ice-cream-and-lollies/all', 'current aisle highlighted with its link');
+  const openNames = [...doc.querySelectorAll('.thl-sidebar details[open] > summary')].map((s) => s.textContent).join(' > ');
+  assert(openNames === 'Groceries & Essentials > Frozen Food', `only the current path is open (${openNames})`);
+  const links = doc.querySelectorAll('.thl-sidebar a').length;
+  assert(links < 120, `closed levels are not built yet (${links} links)`);
 
   const prices = doc.querySelectorAll('[class*="online-components-product-tile-price__text"]');
   const units = doc.querySelectorAll('[class*="online-components-product-tile-unit-price__subtext"]');
@@ -57,6 +88,15 @@ async function runFixture(fixture) {
   assert(prices.length > 0, `found ${prices.length} price elements`);
   assert(units.length === prices.length, `every price has a unit price (${units.length}/${prices.length})`);
   assert(bars.length > 0, `found ${bars.length} clubcard bars`);
+  assert(doc.documentElement.classList.contains('thl-restyle'), 'restyle class set by default');
+  assert(doc.documentElement.classList.contains('thl-declutter'), 'declutter class set by default');
+  const banners = doc.querySelectorAll('.thl-banner').length;
+  const packs = [...doc.querySelectorAll('.thl-pack')].filter((p) => p.textContent).length;
+  assert(banners === prices.length, `every card has a banner (${banners}/${prices.length})`);
+  assert(packs === prices.length, `every card has a pack size (${packs}/${prices.length})`);
+  const ratingCount = doc.querySelectorAll('[data-testid="star-rating"]').length;
+  const thumbs = doc.querySelectorAll('.thl-thumb-up, .thl-thumb-down').length;
+  assert(thumbs === ratingCount, `every rated card has a thumb (${thumbs}/${ratingCount})`);
 
   const layers = doc.querySelectorAll('.thl-layer');
   assert(layers.length > 0, `overlay layers created (${layers.length})`);
@@ -146,7 +186,53 @@ async function runFixture(fixture) {
   assert(okEmoji, 'rating emoji matches threshold rules');
 }
 
+// Out-of-stock tile (no price, stock message instead) must still become a card.
+async function runOutOfStock() {
+  console.log('\n== out of stock ==');
+  const html = fs.readFileSync(path.join(__dirname, 'fixtures', 'tile-out-of-stock.html'), 'utf8');
+  const dom = makeDom(html);
+  installChromeShim(dom, undefined);
+  run(PARSE_SRC, dom);
+  run(CONTENT_SRC, dom);
+  await new Promise((r) => setTimeout(r, 100));
+  const doc = dom.window.document;
+  const li = doc.querySelector('li');
+  assert(li.dataset.thlStatus === 'unavailable', 'tile marked unavailable');
+  const chip = doc.querySelector('.thl-chip-status');
+  assert(chip && chip.textContent === 'Out of stock', 'banner shows Out of stock');
+  const pack = doc.querySelector('.thl-pack');
+  assert(pack && pack.textContent === '200 g', 'pack size from title (' + (pack && pack.textContent) + ')');
+  const btn = doc.querySelector('.thl-unavailable-btn');
+  assert(btn && btn.textContent === 'Out of Stock' && btn.getAttribute('aria-disabled') === 'true', 'disabled Out of Stock button');
+  const title = doc.querySelector('.thl-title-link');
+  assert(title && title.textContent === 'FRUIT RIOT CRUNCHY CANDY GRAPES', 'title stripped of size');
+}
+
+// Homepage: promo panels make way for a groceries-only department grid.
+async function runHome() {
+  console.log('\n== homepage ==');
+  const html = fs.readFileSync(path.join(__dirname, 'fixtures', 'home.html'), 'utf8').replace(/<script\b[\s\S]*?<\/script>/gi, '');
+  const dom = makeDom(html);
+  installChromeShim(dom, undefined);
+  for (const src of [PARSE_SRC, DEPTS_SRC, FILTERS_SRC, PAGES_SRC, CONTENT_SRC]) run(src, dom);
+  await new Promise((r) => setTimeout(r, 100));
+  const doc = dom.window.document;
+  assert(doc.querySelectorAll('.thl-home').length === 1, 'one groceries grid');
+  const cards = [...doc.querySelectorAll('.thl-home-card h2')].map((h) => h.textContent);
+  assert(cards.length === 8 && cards[0] === 'Fresh Food', `grocery departments (${cards.join(', ')})`);
+  const href = doc.querySelector('.thl-home-card li a').getAttribute('href');
+  assert(/^\/shop\/en-GB\/browse\/groceries-and-essentials\/fresh-food\/[a-z0-9-]+\/all$/.test(href), 'aisle link is a browse URL (' + href + ')');
+  assert(!doc.querySelector('.thl-sidebar'), 'no sidebar on the homepage');
+}
+
 (async () => {
+  try {
+    await runOutOfStock();
+    await runHome();
+  } catch (e) {
+    failures++;
+    console.error('  ERROR:', e.message);
+  }
   for (const f of FIXTURES) {
     try {
       await runFixture(f);

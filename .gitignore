@@ -5,3 +5,5 @@ research/page.html
 research/live-shot.png
 research/tiles.txt
 *.zip
+dist/
+.DS_Store

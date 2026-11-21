@@ -1,0 +1,146 @@
+/* Filter bar (content/filters.js): replaces Tesco's Filter / Sort buttons when declutter is on. */
+html.thl-declutter [data-testid='product-list-header']:has(.thl-filters) {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 8px;
+  height: auto !important;
+
+  & > div:has([data-testid='show-filter-btn']) {
+    display: none !important;
+  }
+}
+/* Tesco's own filter panel never shows: the bar drives it while hidden ("More …" would otherwise pop it open). */
+html.thl-declutter:has(.thl-filters) .ddsweb-sidebar-panel__wrapper:has(input[name='sortBy']) {
+  display: none !important;
+}
+.thl-filters {
+  position: relative;
+  z-index: 70;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+}
+.thl-filters-row,
+.thl-filters-active {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.thl-fchip,
+.thl-dd > summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 14px;
+  border: 1px solid #c9d2dc;
+  border-radius: 999px;
+  background: #fff;
+  color: #1a1a1a;
+  font: inherit;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  list-style: none;
+
+  &:hover {
+    border-color: #00539f;
+  }
+}
+.thl-dd > summary {
+  &::-webkit-details-marker {
+    display: none;
+  }
+  &::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: 2px;
+    border: solid currentColor;
+    border-width: 0 1.5px 1.5px 0;
+    transform: translateY(-2px) rotate(45deg);
+  }
+}
+.thl-dd[open] > summary::after {
+  transform: translateY(1px) rotate(-135deg);
+}
+.thl-fchip[aria-pressed='true'],
+.thl-dd > summary.thl-dd-on {
+  border-color: #00539f;
+  background: #00539f;
+  color: #fff;
+}
+.thl-count {
+  color: #7a8592;
+  font-size: 12px;
+  font-weight: 400;
+}
+.thl-fchip[aria-pressed='true'] .thl-count,
+.thl-dd-on .thl-count {
+  color: rgba(255, 255, 255, 0.8);
+}
+.thl-dd {
+  position: relative;
+}
+.thl-dd-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 240px;
+  max-height: 340px;
+  overflow-y: auto;
+  padding: 6px;
+  border: 1px solid #e3e7ec;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+.thl-dd-search {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 4px;
+  padding: 8px 10px;
+  border: 1px solid #c9d2dc;
+  border-radius: 8px;
+  font: inherit;
+}
+.thl-dd-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+
+  &:hover {
+    background: #f0f5fb;
+  }
+  & input {
+    margin: 0;
+    accent-color: #00539f;
+  }
+  & .thl-count {
+    margin-left: auto;
+    padding-left: 12px;
+  }
+}
+.thl-fchip-x {
+  height: 28px;
+  padding: 0 10px;
+  border: 0;
+  border-radius: 999px;
+  background: #e6eef8;
+  color: #00539f;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.thl-filters-clear {
+  margin-left: 4px;
+  color: #00539f !important;
+  font-size: 13px;
+}

@@ -1,0 +1,253 @@
+/* Declutter: hide page chrome that is not about shopping. Toggled by content.js via
+   `html.thl-declutter` from `settings.declutter`. Search, account, Filter/Sort and the basket stay. */
+
+/* ---- One-row header, VitePress style ----
+   [logo] [department links] ........ [search] [basket] [Sign in] [Register] */
+/* Whole header sticks; drop the space Tesco reserves above it for the link strip. */
+html.thl-declutter :is(#sticky-header, .template-header) {
+  position: sticky !important;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+
+  &, & > div {
+    min-height: 0 !important;
+    height: auto !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+}
+html.thl-declutter div:has(> [data-testid='masthead']) {
+  position: relative !important;
+  display: grid !important;
+  grid-template: auto / minmax(0, 1fr) !important;
+  align-items: center;
+  border-bottom: 1px solid #e3e7ec;
+
+  /* Masthead and department nav share one grid cell; empty spacers go. */
+  & > * {
+    grid-area: 1 / 1 !important;
+  }
+  & > div:not([data-testid]) {
+    display: none !important;
+  }
+}
+html.thl-declutter [data-testid='masthead'] {
+  /* Live site makes this sticky with z-index 10; the row above is sticky instead. */
+  position: static !important;
+  z-index: auto !important;
+  background: transparent !important;
+  display: flex !important;
+  align-items: center;
+  gap: 10px;
+  min-height: 60px;
+  padding: 0 16px !important;
+
+  & > div:has(> form[data-testid='searchForm']) {
+    order: 2;
+    width: 300px !important;
+    max-width: 30vw;
+    margin: 0 0 0 auto !important;
+  }
+  & > .thl-header-basket {
+    order: 3;
+  }
+  & > [data-testid='auth-cta-container'] {
+    order: 4;
+    align-self: center !important;
+    margin: 0 !important;
+  }
+}
+
+/* Department links sit right of the logo; the wrapper lets clicks through to the masthead. */
+html.thl-declutter [data-testid='desktop-wrapper'] {
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+  align-self: center;
+  padding-left: 150px !important;
+
+  /* Keep the first few links so they stay clear of the search box. */
+  & nav[aria-label='Menu'] ul > li:nth-child(n + 4) {
+    display: none !important;
+  }
+
+  & > div > div:first-child {
+    display: flex !important;
+    width: max-content !important;
+    background: transparent !important;
+    border-bottom: 0 !important;
+  }
+  & > div > div:not(:first-child) {
+    display: none !important;
+  }
+  & nav {
+    pointer-events: auto;
+  }
+}
+
+/* Header basket button (rendered by content.js from the sidebar's total). */
+.thl-header-basket {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 40px;
+  padding: 0 14px;
+  border: 2px solid #00539f;
+  border-radius: 999px;
+  color: #00539f !important;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none !important;
+  white-space: nowrap;
+
+  &:hover {
+    background: #f0f5fb;
+  }
+  & svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+/* Use the full window width; the card grid adds columns as it grows. */
+html.thl-declutter .template-wrapper {
+  max-width: 100% !important;
+  margin: 0 !important;
+}
+
+/* Product grid: as many ~260px columns as fit, so cards keep their size at any width. */
+html.thl-declutter ul#list-content,
+html.thl-declutter ul[data-testid='dynamic-grid'] {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)) !important;
+}
+
+/* Sidebar basket column: its total lives in the header now, so the grid gets the width. */
+html.thl-declutter .template-sidecolumn {
+  display: none !important;
+}
+
+/* Header chaff: the Tesco Insurance / Bank / Mobile / Delivery Saver link strip. */
+html.thl-declutter nav[data-testid='app-bar'] {
+  display: none !important;
+}
+
+/* The large links footer (help, about, socials, payment logos). */
+html.thl-declutter [data-testid='app-footer'] {
+  display: none !important;
+}
+
+/* Sub-category pill wall above the grid, and its carousel variant. */
+html.thl-declutter ul:has(> li > a.categoryPill-link),
+html.thl-declutter #pill-carousel {
+  display: none !important;
+}
+
+/* Basket sidebar filler: "Groceries / Reserve a slot" block and the empty-basket art.
+   Matched by shape so a booked-slot summary (different markup) still shows. */
+html.thl-declutter [data-testid='basket-items-container'] > div:not([data-testid]):has(> div > h3 + hr + h4:last-child),
+html.thl-declutter [data-testid='empty-basket-container'] {
+  display: none !important;
+}
+
+/* ---- Department sidebar (built by content.js) ----
+   Replaces Tesco's All Departments mega-menu with a compact tree on the left. */
+html.thl-declutter:has(.thl-sidebar) nav[aria-label='All departments menu'] {
+  display: none !important;
+}
+html.thl-declutter:has(.thl-sidebar) [data-testid='desktop-wrapper'] {
+  padding-left: 140px !important;
+}
+.thl-sidebar {
+  flex: 0 0 236px;
+  align-self: flex-start;
+  position: sticky;
+  top: 61px;
+  max-height: calc(100vh - 61px);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 16px 8px 24px 16px;
+  border-right: 1px solid #e3e7ec;
+  font-size: 14px;
+  line-height: 1.3;
+  scrollbar-width: thin;
+
+  & .thl-sb-title {
+    margin: 0 0 8px 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #5a6572;
+  }
+  & summary {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 8px;
+    border-radius: 6px;
+    color: #1a1a1a;
+    cursor: pointer;
+    list-style: none;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+    &::before {
+      content: '';
+      flex: none;
+      width: 6px;
+      height: 6px;
+      border: solid #7a8592;
+      border-width: 0 1.5px 1.5px 0;
+      transform: rotate(-45deg);
+      transition: transform 0.15s;
+    }
+    &:hover {
+      background: #f0f5fb;
+    }
+  }
+  & details[open] > summary::before {
+    transform: rotate(45deg);
+  }
+  & .thl-sb-super > summary {
+    font-weight: 700;
+  }
+  & .thl-sb-super[open] > summary {
+    color: #00539f;
+  }
+  & details > details,
+  & details > a {
+    margin-left: 14px;
+  }
+  & a {
+    display: block;
+    padding: 5px 8px;
+    border-radius: 6px;
+    color: #333 !important;
+    text-decoration: none !important;
+
+    &:hover {
+      background: #f0f5fb;
+      color: #00539f !important;
+    }
+  }
+  & .thl-sb-all {
+    color: #5a6572 !important;
+    font-size: 13px;
+  }
+  & .thl-sb-current {
+    background: #e6eef8;
+    color: #00539f !important;
+    font-weight: 700;
+    box-shadow: inset 3px 0 0 #00539f;
+  }
+}
+@media (max-width: 1000px) {
+  .thl-sidebar {
+    display: none;
+  }
+  html.thl-declutter:has(.thl-sidebar) nav[aria-label='All departments menu'] {
+    display: block !important;
+  }
+}

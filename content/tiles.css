@@ -1,0 +1,333 @@
+/* Experimental card restyle: verdict banner on top, product photo in the middle, and a panel
+   with title, pack size, unit price, total price and the Add / quantity controls at the bottom. */
+
+/* Tesco's hashed classes rotate between deploys, so match only stable
+   `online-components-*` / `ddsweb-*` classes, `thl-*` elements and structural `:has()`. */
+html.thl-restyle li:has(> div > div > .thl-banner) {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 6px;
+  background: #ffffff;
+  border: 1px solid #dfe4ea;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(16, 24, 40, 0.08);
+
+  /* The verdict now lives in the banner and the price colour, so drop the overlay. */
+  & > .thl-layer {
+    display: none !important;
+  }
+
+  /* `.thl-layer` is also a direct child div; never restyle the overlay. */
+  & > div:not(.thl-layer) {
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 100%;
+  }
+
+  /* Four rows: banner, photo, title, footer. Everything else is hidden. */
+  & > div:not(.thl-layer) > div {
+    position: relative !important;
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    grid-template-rows: auto minmax(0, 1fr) auto auto !important;
+    gap: 0 !important;
+    height: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+    align-items: stretch !important;
+    justify-items: stretch !important;
+
+    & > div {
+      display: none !important;
+      grid-column: 1 / -1 !important;
+      min-width: 0;
+    }
+  }
+
+  /* ---- Banner: Sponsored, LOW / MID / HIGH, Clubcard deal ---- */
+  & > div:not(.thl-layer) > div > div.thl-banner {
+    display: flex !important;
+    grid-row: 1 !important;
+    align-items: center;
+    gap: 6px;
+    min-height: 34px;
+    padding: 6px 10px !important;
+    background: #f5f7fa;
+    border-bottom: 1px solid #dfe4ea;
+    overflow: hidden;
+  }
+
+  /* ---- Photo ---- */
+  & > div > div > div:has(> a > img.online-components-product-tile-product-image__image) {
+    display: block !important;
+    grid-row: 2 !important;
+    position: relative;
+    min-height: 190px;
+
+    & a {
+      position: absolute !important;
+      inset: 12px;
+      display: block;
+    }
+    & img {
+      position: absolute !important;
+      inset: 0 !important;
+      width: 100% !important;
+      height: 100% !important;
+      max-width: none !important;
+      max-height: none !important;
+      object-fit: contain;
+    }
+  }
+
+  /* Reviews collapse to a thumbs up (4+ stars) or down on the photo's bottom edge;
+     Tesco's star row stays hidden with the other unlisted parts. */
+  & > div:not(.thl-layer) > div > div.thl-thumb {
+    display: flex !important;
+    grid-row: 2 !important;
+    align-self: end;
+    justify-self: end;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    width: 34px;
+    height: 34px;
+    margin: 0 10px 8px 0 !important;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 1;
+    background: #ffffff;
+    box-shadow: 0 1px 4px rgba(16, 24, 40, 0.2);
+  }
+  & .thl-thumb-up { border: 2px solid #18803a; }
+  & .thl-thumb-down { border: 2px solid #c5221f; }
+
+  /* ---- Bottom panel: title ---- */
+  /* Our title (size stripped, since the pack line shows it) replaces Tesco's heading. */
+  & > div:not(.thl-layer) > div > div.thl-title {
+    display: block !important;
+    grid-row: 3 !important;
+    padding: 10px 12px 0 !important;
+    border-top: 1px solid #eef1f4;
+  }
+  & .thl-title-link {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 1.3;
+    font-weight: 600;
+    color: #1c2430;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  /* ---- Bottom panel: pack + unit price | total, then controls ---- */
+  & > div > div > div:has(.online-components-product-tile-buybox-add-button__button),
+  & > div > div > div:has(> div > div > p.online-components-product-tile-price__text) {
+    display: block !important;
+    grid-row: 4 !important;
+    padding: 8px 12px 12px !important;
+    margin: 0 !important;
+    background: transparent !important;
+
+    & > div:empty {
+      display: none !important;
+    }
+    & > div:not(:empty) {
+      display: flex !important;
+      flex-direction: column !important;
+      align-items: stretch !important;
+      gap: 10px;
+      width: 100% !important;
+      padding: 0 !important;
+    }
+  }
+
+  & div:has(> p.online-components-product-tile-price__text) {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: 'pack price' 'unit price';
+    align-items: center;
+    column-gap: 8px;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+  & .thl-pack {
+    grid-area: pack;
+    margin: 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #1c2430;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  & .online-components-product-tile-unit-price__subtext {
+    grid-area: unit;
+    margin: 0;
+    font-size: 12px;
+    color: #5a6572;
+  }
+  & .online-components-product-tile-price__text {
+    grid-area: price;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 1;
+    color: #1c2430;
+    white-space: nowrap;
+  }
+  &[data-thl-score='low'] .online-components-product-tile-price__text { color: #18803a; }
+  &[data-thl-score='mid'] .online-components-product-tile-price__text { color: #b36b00; }
+  &[data-thl-score='high'] .online-components-product-tile-price__text { color: #c5221f; }
+
+  /* Unavailable products: pack line plus a greyed-out button in place of Add; photo greyed too. */
+  & > div:not(.thl-layer) > div > div.thl-unavailable {
+    display: flex !important;
+    grid-row: 4 !important;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px 12px 12px !important;
+  }
+  & .thl-unavailable-btn {
+    order: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 36px;
+    border-radius: 999px;
+    background: #e3e7ec;
+    color: #7a8592;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: not-allowed;
+  }
+  &[data-thl-status] img.online-components-product-tile-product-image__image {
+    filter: grayscale(1);
+    opacity: 0.5;
+  }
+
+  /* Add button, or Tesco's - qty + controls once in the basket: full width. */
+  & div:has(> p.online-components-product-tile-price__text) + div {
+    display: flex !important;
+    justify-content: stretch;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+
+    & > * {
+      flex: 1 1 auto;
+    }
+  }
+  & .online-components-product-tile-buybox-add-button__button {
+    width: 100%;
+    min-height: 36px;
+    border-radius: 999px;
+    font-weight: 700;
+  }
+}
+
+/* "More like this" links are not part of the card design. */
+html.thl-restyle div:has(> a.online-components-product-tile-rest-of-shelf__rest-of-shelf) {
+  display: none !important;
+}
+
+/* ---- Banner chips ---- */
+.thl-chip {
+  flex: 0 0 auto;
+  padding: 3px 8px;
+  border-radius: 999px;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 14px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #ffffff;
+}
+.thl-chip-sponsored {
+  background: #ffffff;
+  border: 1px solid #cfd6de;
+  color: #5a6572;
+}
+.thl-chip-status { background: #5a6572; }
+.thl-chip-low { background: #18803a; }
+.thl-chip-mid { background: #c77700; }
+.thl-chip-high { background: #c5221f; }
+
+/* Clubcard deal in Clubcard colours, with its own verdict as a coloured edge. */
+.thl-chip-cc {
+  flex: 0 1 auto;
+  min-width: 0;
+  margin-left: auto;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background: #ffd400;
+  color: #00539f;
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: 11px;
+}
+/* Clubcard breakdown popover: anchored to the card (chip and banner stay static),
+   so the banner's overflow clipping does not cut it off. */
+.thl-chip-cc {
+  cursor: help;
+  outline: none;
+}
+.thl-chip-cc:focus-visible {
+  outline: 2px solid #00539f;
+  outline-offset: 1px;
+}
+.thl-pop {
+  display: none;
+  position: absolute;
+  top: 38px;
+  left: 8px;
+  right: 8px;
+  z-index: 10;
+  padding: 10px 12px;
+  border: 1px solid #dfe4ea;
+  border-radius: 10px;
+  background: #ffffff;
+  box-shadow: 0 6px 20px rgba(16, 24, 40, 0.18);
+  color: #1c2430;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+  white-space: normal;
+  cursor: default;
+}
+.thl-chip-cc:hover .thl-pop,
+.thl-chip-cc:focus .thl-pop {
+  display: grid;
+  gap: 5px;
+}
+.thl-pop-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+.thl-pop-label {
+  color: #5a6572;
+}
+.thl-pop-value {
+  font-weight: 700;
+  text-align: right;
+}
+.thl-pop-cc .thl-pop-value { color: #00539f; }
+.thl-pop-save .thl-pop-value { color: #18803a; }
+.thl-pop-low .thl-pop-value { color: #18803a; }
+.thl-pop-mid .thl-pop-value { color: #b36b00; }
+.thl-pop-high .thl-pop-value { color: #c5221f; }
+
+.thl-chip-cc-low { box-shadow: inset 5px 0 0 #18803a; padding-left: 10px; }
+.thl-chip-cc-mid { box-shadow: inset 5px 0 0 #c77700; padding-left: 10px; }
+.thl-chip-cc-high { box-shadow: inset 5px 0 0 #c5221f; padding-left: 10px; }

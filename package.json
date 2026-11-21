@@ -7,6 +7,10 @@
     "test": "node research/test_parse.js && node research/test_content.js",
     "lint": "web-ext lint --source-dir=. --ignore-files research/** node_modules/** package.json package-lock.json",
     "run:firefox": "web-ext run --source-dir=. --firefox=/Applications/Firefox.app/Contents/MacOS/firefox",
+    "types:api": "bunx quicktype --lang typescript --just-types --no-enums --no-date-times --top-level TescoCategoryResponse --src-lang json --out research/tesco-api.ts research/fixtures/ice-cream-api.json",
+    "build": "node research/build.js",
+    "build:departments": "node research/build_departments.js",
+    "types:taxonomy": "bunx quicktype --lang typescript --just-types --no-enums --no-date-times --top-level TescoTaxonomyResponse --src-lang json --out research/tesco-taxonomy.ts research/fixtures/categories.json",
     "open:cli": "playwright-cli open --config research/cli-extension.config.json"
   },
   "license": "MIT",

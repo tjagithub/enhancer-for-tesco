@@ -1,0 +1,352 @@
+[
+	{
+		"data": {
+			"page": {
+				"children": [
+					{
+						"type": "Panel",
+						"props": {
+							"ruleId": "",
+							"tracking": {},
+							"id": "tradestampssection",
+							"ordered": true
+						},
+						"childrenType": null,
+						"children": [
+							{
+								"type": "TradeStamp",
+								"props": {
+									"ruleId": "defaultClientType",
+									"contentId": "09d41648-40bc-43e2-a9f8-c17c1082d406",
+									"tracking": {
+										"id": "CIT_GHS_WHOOSH"
+									},
+									"name": "06",
+									"image": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/bb70a6cd-afca-442b-93f1-a2449e6cdb67/2603_-GHS-CIT-Nav-743x430_1-Whoosh.jpeg",
+									"linkNewWindow": "No",
+									"linkText": "https://www.tesco.com/shop/en-GB/zone/whoosh?icid=CIT_GHS_WHOOSH",
+									"priority": "medium",
+									"title": "Shop Whoosh"
+								},
+								"__typename": "RawComponent"
+							},
+							{
+								"type": "TradeStamp",
+								"props": {
+									"ruleId": "defaultClientType",
+									"contentId": "688bfd51-0d0a-4e2b-98fb-08717ce30084",
+									"tracking": {
+										"id": "CIT_GHS_DELIVERY_SAVER"
+									},
+									"name": "04",
+									"image": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/9423d422-4d77-4c29-9a12-ef537067be47/2603_-GHS-CIT-Nav-743x430_2-Delivery-saver.jpeg",
+									"linkNewWindow": "No",
+									"linkText": "https://www.tesco.com/deliverysaver?icid=CIT_GHS_DELIVERY_SAVER",
+									"priority": "medium",
+									"title": "Explore Delivery Saver"
+								},
+								"__typename": "RawComponent"
+							},
+							{
+								"type": "TradeStamp",
+								"props": {
+									"ruleId": "defaultClientType",
+									"contentId": "993d26f5-8704-4f2a-b43f-8b0f09e029c8",
+									"tracking": {
+										"id": "CIT_GHS_F_F"
+									},
+									"name": "08",
+									"image": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/e39b8126-3158-4cf9-a3a6-6704a719b443/2626-1352850-CIT-FandF.jpeg",
+									"linkNewWindow": "No",
+									"linkText": "https://www.tesco.com/shop/en-GB/clothing/landing/f-f?icid=CIT_GHS_F_F",
+									"priority": "medium",
+									"title": "Shop F&F Clothing"
+								},
+								"__typename": "RawComponent"
+							},
+							{
+								"type": "TradeStamp",
+								"props": {
+									"ruleId": "defaultClientType",
+									"contentId": "b076b544-cce7-4ce2-a6fe-755fcb42efae",
+									"tracking": {
+										"id": "CIT_GHS_F_F_HOME"
+									},
+									"name": "01",
+									"image": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/fe6b3bfe-b605-48ff-839a-8138463fa3b0/2603_-GHS-CIT-Nav-743x430_5-F%26FHome.jpeg",
+									"linkNewWindow": "No",
+									"linkText": "https://www.tesco.com/shop/en-GB/zone/F-F-home?icid=CIT_GHS_F_F_HOME",
+									"priority": "medium",
+									"title": "Shop F&F Home"
+								},
+								"__typename": "RawComponent"
+							},
+							{
+								"type": "TradeStamp",
+								"props": {
+									"ruleId": "defaultClientType",
+									"contentId": "74b4a09a-5528-444a-b49a-8780d1fc5342",
+									"tracking": {
+										"id": "CIT_MP_HUB"
+									},
+									"name": "02",
+									"image": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/10ec194c-2d5a-49fa-9f35-75b7df91eda3/2635_BlackFriday-2026_Taxonomy-visnav.jpeg",
+									"linkNewWindow": "No",
+									"linkText": "https://www.tesco.com/shop/en-GB/zone/black-friday?icid=CIT_MP_HUB",
+									"priority": "medium",
+									"title": "Shop Black Friday Deals"
+								},
+								"__typename": "RawComponent"
+							},
+							{
+								"type": "TradeStamp",
+								"props": {
+									"ruleId": "defaultClientType",
+									"contentId": "2663c2fe-25e6-4f32-835a-29e2b4cc4016",
+									"tracking": {
+										"id": "CIT_GHS_SPECIAL_OFFERS"
+									},
+									"name": "03",
+									"image": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/76786986-8709-47f1-acfa-0c37955078ad/2603_-GHS-CIT-Nav-743x430_7-Special-offers.jpeg",
+									"linkNewWindow": "No",
+									"linkText": "https://www.tesco.com/shop/en-GB/promotions?icid=CIT_GHS_SPECIAL_OFFERS",
+									"priority": "medium",
+									"title": "Shop special offers"
+								},
+								"__typename": "RawComponent"
+							},
+							{
+								"type": "TradeStamp",
+								"props": {
+									"ruleId": "",
+									"contentId": "f811a654-ac05-4413-991f-a8a638f038e3",
+									"tracking": {
+										"id": "CIT_GHS_ELP"
+									},
+									"name": "010",
+									"image": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/d383a25e-44e5-4da7-b23d-40d601a606b4/2608_GHS-CIT-Nav-743x430_EDLP.jpeg",
+									"linkNewWindow": "No",
+									"linkText": "https://www.tesco.com/shop/en-GB/buylists/everyday-low-prices/top-picks?icid=CIT_GHS_ELP",
+									"priority": "medium",
+									"title": "Shop Everyday Low Prices"
+								},
+								"__typename": "RawComponent"
+							},
+							{
+								"type": "TradeStamp",
+								"props": {
+									"ruleId": "defaultClientType",
+									"contentId": "224604ae-4688-4b7c-bee4-6e9d036f661f",
+									"tracking": {
+										"id": "CIT_GHS_FINEST"
+									},
+									"name": "07",
+									"image": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/f963a5d0-53dc-4105-ad4d-4cc78bdc856a/2603_-GHS-CIT-Nav-743x430_8-Finest.jpeg",
+									"linkNewWindow": "No",
+									"linkText": "https://www.tesco.com/shop/en-GB/buylists/finest-food/top-picks?icid=CIT_GHS_FINEST",
+									"priority": "medium",
+									"title": "Shop Tesco Finest"
+								},
+								"__typename": "RawComponent"
+							},
+							{
+								"type": "TradeStamp",
+								"props": {
+									"ruleId": "defaultClientType",
+									"contentId": "9fdff1ac-7d08-42d8-81f2-acfb45ee96da",
+									"tracking": {
+										"id": "CIT_GHS_FREE_FROM"
+									},
+									"name": "09",
+									"image": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/add7d9d7-373c-4673-be7c-e913897d76f9/2603_-GHS-CIT-Nav-743x430_9_Free-From.jpeg",
+									"linkNewWindow": "No",
+									"linkText": "https://www.tesco.com/shop/en-GB/buylists/free-from/free-from?icid=CIT_GHS_FREE_FROM",
+									"priority": "medium",
+									"title": "Shop Tesco Free From"
+								},
+								"__typename": "RawComponent"
+							},
+							{
+								"type": "TradeStamp",
+								"props": {
+									"ruleId": "defaultClientType",
+									"contentId": "60988b2d-0256-493e-a431-df6decedff27",
+									"tracking": {
+										"id": "CIT_GHS_VEGETARIAN"
+									},
+									"name": "011",
+									"image": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/4bcb6a38-34b8-41e4-942a-ec2adc508a7e/2603_-GHS-CIT-Nav-743x430_10-Veggie.jpeg",
+									"linkNewWindow": "No",
+									"linkText": "https://www.tesco.com/shop/en-GB/browse/groceries-and-essentials/fresh-food/chilled-vegetarian-and-vegan?icid=CIT_GHS_VEGETARIAN",
+									"priority": "medium",
+									"title": "Shop vegetarian and vegan"
+								},
+								"__typename": "RawComponent"
+							},
+							{
+								"type": "TradeStamp",
+								"props": {
+									"ruleId": "defaultClientType",
+									"contentId": "8693c846-6bad-4f60-ba1c-948678710fe4",
+									"tracking": {
+										"id": "CIT_GHS_CCMP"
+									},
+									"name": "012",
+									"image": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/5037e174-da4c-4891-90b5-712d3d0816ec/2546-GHS-CIT-Nav-743x430_11-CCP.jpeg",
+									"linkNewWindow": "No",
+									"linkText": "https://www.tesco.com/shop/en-GB/buylists/clubcard-prices/top-picks?icid=CIT_GHS_CCMP",
+									"priority": "medium",
+									"title": "Shop Clubcard Prices"
+								},
+								"__typename": "RawComponent"
+							}
+						],
+						"__typename": "RawComponent"
+					},
+					{
+						"type": "Panel",
+						"props": {
+							"ruleId": "",
+							"tracking": {},
+							"id": "tradestampssection",
+							"ordered": true
+						},
+						"childrenType": null,
+						"children": [
+							{
+								"type": "TradeStamp",
+								"props": {
+									"ruleId": "defaultClientType",
+									"contentId": "fbd995b3-606b-4d75-b2c2-6df4190e891a",
+									"tracking": {
+										"id": "CIT_GHS_MNM_READY_MEAL"
+									},
+									"name": "011",
+									"image": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/33f907d3-f410-4cc9-9da7-7edd4e88fa65/2634-WF-1551400-CIT-Bake+the+VT.jpeg",
+									"is_asterisk": "No",
+									"is_flat_tile": "No",
+									"linkNewWindow": "No",
+									"linkText": "https://www.tesco.com/shop/en-GB/browse/groceries-and-essentials/fresh-food/ready-meals/mix-and-match-meals-3-for-pound8/all?icid=CIT_GHS_MNM_READY_MEAL",
+									"priority": "medium",
+									"title": "Shop mix and match ready meals"
+								},
+								"__typename": "RawComponent"
+							},
+							{
+								"type": "TradeStamp",
+								"props": {
+									"ruleId": "defaultClientType",
+									"contentId": "1bfeab7a-4b8f-4e1d-9ad8-8107384fa2ea",
+									"tracking": {
+										"id": "CIT_GHS_FINEST_READY_MEAL"
+									},
+									"name": "05",
+									"image": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/64e60072-29a0-4b44-a4dd-8b35d9e6d36f/2609-981100-GHS-CIT-Firepit+Promo-743x430.jpeg",
+									"is_asterisk": "No",
+									"is_flat_tile": "No",
+									"linkNewWindow": "No",
+									"linkText": "https://www.tesco.com/shop/en-GB/browse/groceries-and-essentials/fresh-food/finest-fresh-food/finest-ready-meals-and-prepared-foods/all?sortBy=relevance&facetsArgs=offer%3Atrue?sortBy=relevance&facetsArgs=offer%3Atrue?sortBy=relevance&facetsArgs=offer%3Atrue?icid=CIT_GHS_FINEST_READY_MEAL",
+									"priority": "medium",
+									"title": "Shop Tesco Finest ready meals"
+								},
+								"__typename": "RawComponent"
+							},
+							{
+								"type": "TradeStamp",
+								"props": {
+									"ruleId": "defaultClientType",
+									"contentId": "9475c772-c6eb-4461-aac1-377f94f2ef29",
+									"tracking": {
+										"id": "CIT_GHS_NEW"
+									},
+									"name": "02",
+									"image": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/b54c41af-6a16-401b-a4e1-27d70159fcfb/2636-1600851-CIT-New+and+Trending.jpeg?spectra=true",
+									"is_asterisk": "No",
+									"is_flat_tile": "No",
+									"linkNewWindow": "No",
+									"linkText": "https://www.tesco.com/groceries/en-GB/zone/new-ranges?icid=CIT_GHS_NEW",
+									"priority": "medium",
+									"title": "Shop new and trending products"
+								},
+								"__typename": "RawComponent"
+							},
+							{
+								"type": "TradeStamp",
+								"props": {
+									"ruleId": "defaultClientType",
+									"contentId": "c35a13a9-9df2-4a2f-b915-9716da306c33",
+									"tracking": {
+										"id": "CIT_GHS_FFTO"
+									},
+									"name": "03",
+									"image": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/04112644-7b63-43c0-8922-885cb9acc321/2631-WF-1474050-CIT-Christmas+FFTO.jpeg",
+									"is_asterisk": "No",
+									"is_flat_tile": "No",
+									"linkNewWindow": "No",
+									"linkText": "https://www.tesco.com/shop/en-GB/zone/festive-food-to-order?icid=CIT_GHS_FFTO",
+									"priority": "medium",
+									"title": "Discover Festive Food to Order"
+								},
+								"__typename": "RawComponent"
+							}
+						],
+						"__typename": "RawComponent"
+					},
+					{
+						"type": "Panel",
+						"props": {
+							"ruleId": "",
+							"tracking": {},
+							"id": "tradestampssection",
+							"ordered": true
+						},
+						"childrenType": null,
+						"children": [
+							{
+								"type": "TradeStamp",
+								"props": {
+									"ruleId": "",
+									"contentId": "b278d11f-8468-4385-940b-031fdd9db8ad",
+									"tracking": {
+										"id": "CIT_GHS_PARTY_FOOD"
+									},
+									"name": "00",
+									"image": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/80aa8571-df3e-4364-a549-1e94b3d2219e/CIT_Party-Food.jpeg",
+									"is_asterisk": "No",
+									"is_flat_tile": "No",
+									"linkNewWindow": "No",
+									"linkText": "https://www.tesco.com/shop/en-GB/buylists/christmas-food/party-food?icid=CIT_GHS_PARTY_FOOD",
+									"priority": "medium",
+									"title": "Shop 3 for 2 party food"
+								},
+								"__typename": "RawComponent"
+							},
+							{
+								"type": "TradeStamp",
+								"props": {
+									"ruleId": "",
+									"contentId": "a8a46ab9-4897-4a21-bb57-97a7cb7a8a7e",
+									"tracking": {
+										"id": "CIT_GHS_CHRISTMAS_HUB"
+									},
+									"name": "01",
+									"image": "https://digitalcontent.api.tesco.com/v2/media/ghs-mktg/90020f25-1475-45c8-8da9-afa7302ff81a/CIT_ChristmasPOS.jpeg",
+									"is_asterisk": "No",
+									"is_flat_tile": "No",
+									"linkNewWindow": "No",
+									"linkText": "https://www.tesco.com/shop/en-GB/zone/christmas?icid=CIT_GHS_CHRISTMAS_HUB",
+									"priority": "medium",
+									"title": "Discover The Christmas Shop"
+								},
+								"__typename": "RawComponent"
+							}
+						],
+						"__typename": "RawComponent"
+					}
+				],
+				"__typename": "DCSPage"
+			}
+		},
+		"status": 200
+	}
+]

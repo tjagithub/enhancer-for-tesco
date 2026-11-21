@@ -14,6 +14,14 @@ function check(actual, expected, msg) {
   }
 }
 
+console.log('== slugify ==');
+check(P.slugify('Groceries & Essentials'), 'groceries-and-essentials', 'ampersand');
+check(P.slugify('Ice Cream & Lollies'), 'ice-cream-and-lollies', 'ice cream aisle (live URL)');
+check(P.slugify('Chilled Vegetarian & Vegan'), 'chilled-vegetarian-and-vegan', 'veg aisle (live URL)');
+check(P.slugify('Mix and Match Meals 3 for £8'), 'mix-and-match-meals-3-for-pound8', 'pound sign (live URL)');
+check(P.slugify("Men's Shampoo"), 'mens-shampoo', 'apostrophe dropped');
+check(P.slugify('Nestlé cereals'), 'nestle-cereals', 'accent folded');
+
 console.log('== parsePrice ==');
 check(P.parsePrice('£4.00'), 4, 'pound 2dp');
 check(P.parsePrice('£10'), 10, 'pound no dp');
@@ -44,5 +52,49 @@ check(P.scoreWithBands(41.67, true, bands), 'high', 'kg high');
 check(P.scoreWithBands(0.5, false, bands), 'low', 'each low');
 check(P.scoreWithBands(2.0, false, bands), 'mid', 'each mid');
 check(P.scoreWithBands(9.0, false, bands), 'high', 'each high');
+
+console.log('== parsePackSize / formatPack ==');
+const pack = (t) => P.formatPack(P.parsePackSize(t));
+check(pack('Haagen-Dazs Belgian Chocolate Mini Cups Ice Cream 4x95ml'), '4 × 95 ml · 380 ml', 'multi no spaces');
+check(pack('Twister Mini Pineapple Lollies XL Family Pack 10 x 50ml'), '10 × 50 ml · 500 ml', 'multi spaced');
+check(pack('Nestle Fab Strawberry Ice Lollies 6 X 58Ml'), '6 × 58 ml · 348 ml', 'capital X and Ml');
+check(pack('Snickers Ice Cream 4 x 50.3 ml'), '4 × 50.3 ml · 201.2 ml', 'decimal each');
+check(pack('Ben & Jerry\'s Minter Wonderland Mint Ice Cream 465Ml'), '465 ml', 'single');
+check(pack('Carte D\'or Madagascan Vanilla Ice Cream Tub 900ml'), '900 ml', 'single tub');
+check(pack('Tesco Semi Skimmed Milk 2.272L'), '2.27 L', 'litres');
+check(pack('Mature Cheddar 1kg'), '1 kg', 'kg');
+check(pack('Bananas Loose'), '', 'no size');
+check(P.formatPack(P.estimatePackSize(5.75, P.parseUnitPrice('£15.13/litre'))), '~380 ml', 'estimated from unit price');
+check(P.formatPack(P.estimatePackSize(3.0, P.parseUnitPrice('£6.00/kg'))), '~500 g', 'estimated grams');
+check(pack('Tesco Rocket Lollies 8 Pack 464Ml'), '8 × 58 ml · 464 ml', 'N pack with total');
+check(P.formatPack(P.estimatePackSize(1.45, P.parseUnitPrice('£0.14/each'), 'Tesco 10 Waffle Cones')), '10 items', 'each count from title');
+check(P.formatPack(P.estimatePackSize(1.7, P.parseUnitPrice('£0.08/each'), 'Askeys Crispy Cones')), '~21 items', 'each count estimated');
+
+console.log('== formatOfferDates ==');
+check(P.formatOfferDates('Offer valid for delivery from 10/11/2026 until 30/11/2026'), '10 Nov – 30 Nov 2026', 'same year');
+check(P.formatOfferDates('Offer valid for delivery from 10/11/2026 until 11/01/2027'), '10 Nov 2026 – 11 Jan 2027', 'across years');
+check(P.formatOfferDates('no dates'), null, 'no dates');
+
+console.log('== stripPackSize ==');
+check(P.stripPackSize('Tesco Fruity Helter Skelters (5 X 70Ml) 350Ml'), 'Tesco Fruity Helter Skelters', 'parenthesised multi + total');
+check(P.stripPackSize('Tesco Rocket Lollies 8 Pack 464Ml'), 'Tesco Rocket Lollies', 'N pack + total');
+check(P.stripPackSize('Twister Mini Pineapple Ice Cream Lollies XL Family Pack 10 x 50ml'), 'Twister Mini Pineapple Ice Cream Lollies XL Family Pack', 'keeps words, drops multi');
+check(P.stripPackSize('Ms Molly\'s Vanilla Ice Cream 2Ltr'), 'Ms Molly\'s Vanilla Ice Cream', 'litres');
+check(P.stripPackSize('Snickers Ice Cream 4 x 50.3 ml'), 'Snickers Ice Cream', 'decimal multi');
+check(P.stripPackSize('Tesco 10 Waffle Cones'), 'Tesco 10 Waffle Cones', 'count without unit kept');
+check(P.stripPackSize('250ml'), '250ml', 'never empties a title');
+
+// Real titles from Tesco's product API: parsed size must match price / unit price.
+console.log('== API titles vs implied size ==');
+const api = require(path.join(__dirname, 'fixtures', 'ice-cream-api.json'));
+for (const { node } of api.flatMap((d) => d.data.category.results)) {
+  const unit = String(node.price.unitOfMeasure).split(' ')[0].toLowerCase();
+  if (!/^(kg|litre)$/.test(unit)) continue;
+  const parsed = P.parsePackSize(node.title);
+  const implied = (node.price.actual / node.price.unitPrice) * 1000;
+  check(parsed !== null && Math.abs(parsed.total - implied) / implied < 0.1, true, node.title.trim());
+  const stripped = P.stripPackSize(node.title);
+  check(P.parsePackSize(stripped), null, 'no size left in: ' + stripped);
+}
 
 console.log(`\n${process.exitCode ? 'FAILURES' : 'ALL PASS'}`);

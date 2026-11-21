@@ -1,0 +1,163 @@
+/* Declutter for the homepage and product pages (see pages.js). */
+
+/* ---- Homepage: Tesco's promo panels go; the groceries grid from pages.js stays ---- */
+html.thl-declutter:has(.thl-home) :is([data-testid='global-homepage-wrapper'], nav[aria-label='All departments menu']) {
+  display: none !important;
+}
+.thl-home {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px 32px 48px;
+  font-family: inherit;
+}
+.thl-home-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 20px;
+  margin-bottom: 20px;
+}
+.thl-home-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #00539f;
+}
+.thl-home-quick {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.thl-home-chip {
+  padding: 6px 14px;
+  border: 1px solid #cfd8e3;
+  border-radius: 999px;
+  color: #00539f;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  background: #fff;
+
+  &:hover {
+    border-color: #00539f;
+    background: #f2f6fb;
+  }
+}
+.thl-home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+}
+.thl-home-card {
+  border: 1px solid #e3e7ec;
+  border-radius: 12px;
+  padding: 16px 18px;
+  background: #fff;
+
+  & h2 {
+    margin: 0 0 10px;
+    font-size: 17px;
+    font-weight: 700;
+  }
+  & h2 a {
+    color: #00539f;
+    text-decoration: none;
+  }
+  & ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    columns: 2;
+    column-gap: 16px;
+  }
+  & li {
+    break-inside: avoid;
+    padding: 2px 0;
+  }
+  & li a {
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+  }
+  & a:hover {
+    text-decoration: underline;
+  }
+}
+
+/* ---- Product page: product on the left, About + Ingredients open on the right ---- */
+html.thl-declutter #mfe-pdp-wrapper {
+  & [data-testid='using-product-info'],
+  & [data-testid='accordion-item']:has(#accordion-header-brand-details-panel),
+  & #review-container,
+  & [data-testid*='carousel' i],
+  & div:has(> .ddsweb-carousel__container) {
+    display: none !important;
+  }
+
+  & div:has(> .pdp-tile) {
+    display: grid !important;
+    grid-template-columns: minmax(280px, 380px) minmax(0, 1fr);
+    column-gap: 40px;
+    align-items: start;
+
+    & > * {
+      grid-column: 1 / -1;
+    }
+    & > .pdp-tile {
+      grid-area: 2 / 1;
+      position: sticky;
+      top: 76px;
+    }
+    & > :has([data-testid='accordion']) {
+      grid-area: 2 / 2;
+      margin-top: 0 !important;
+    }
+  }
+
+  & .pdp-tile .product-tile-main {
+    display: flex !important;
+    flex-direction: column;
+    gap: 16px;
+  }
+  & .pdp-tile section[aria-label='product images'] {
+    width: 100% !important;
+    max-width: 320px;
+  }
+  & .pdp-tile section[aria-label='product images'] img {
+    max-height: 300px;
+    object-fit: contain;
+  }
+
+  /* Always open; their headers become plain headings. */
+  & :is(#accordion-panel-product-description, #accordion-panel-ingredients-panel) {
+    display: block !important;
+    height: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    & > * {
+      visibility: visible !important;
+    }
+  }
+  & :is(#accordion-header-product-description, #accordion-header-ingredients-panel) {
+    pointer-events: none;
+
+    & :is(svg, span:has(> svg), [class*='icon' i]) {
+      display: none !important;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  html.thl-declutter #mfe-pdp-wrapper div:has(> .pdp-tile) {
+    grid-template-columns: minmax(0, 1fr);
+
+    & > .pdp-tile,
+    & > :has([data-testid='accordion']) {
+      grid-area: auto;
+      position: static;
+    }
+  }
+}
