@@ -1,4 +1,4 @@
-# Tesco Price Highlight
+# Enhancer for Tesco
 
 Browser extension (MV3, Chrome + Firefox) that scores Tesco product tiles and, optionally, restyles them as cards.
 

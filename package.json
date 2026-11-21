@@ -1,5 +1,5 @@
 {
-  "name": "tesco-highlight",
+  "name": "enhancer-for-tesco",
   "version": "1.0.0",
   "description": "Firefox/Chrome extension that highlights Tesco prices and price-per-kg as low/mid/high, including Clubcard prices.",
   "private": true,

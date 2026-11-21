@@ -71,7 +71,7 @@
     } catch (e) {
       if (!lastErrorShown) {
         lastErrorShown = true;
-        console.warn('[Tesco Price Highlight] Could not read settings:', e.message);
+        console.warn('[Enhancer for Tesco] Could not read settings:', e.message);
       }
     }
     scan();
